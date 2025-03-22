@@ -1,9 +1,10 @@
 import React,{ReactNode} from 'react'
 
 type ButtonPropsType= {
-    children: ReactNode
+    children: ReactNode,
+    onClick: () => void,
 }
-const Button = ({children}: ButtonPropsType) => {
+const Button = ({children, onClick}: ButtonPropsType) => {
     const buttonStyle= {
         padding: '10px 20px',
         fontSize: "1.2em",
@@ -14,7 +15,7 @@ const Button = ({children}: ButtonPropsType) => {
         border: "none"
     }
   return (
-    <button style={buttonStyle}>
+    <button style={buttonStyle} onClick={onClick}>
       {children}
     </button>
   )
