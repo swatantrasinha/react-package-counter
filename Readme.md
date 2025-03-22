@@ -29,8 +29,12 @@ b. also add these changes
 
 the complete file will look like below :   
 
+<details>
+    <summary>package.json </summary>
+    <p>
+        
 
-    ```javascript
+```javascript
 
 {
   "name": "counter-using-react",
@@ -56,17 +60,22 @@ the complete file will look like below :
   }
 }
 
-    ```
+```
+
+ </p>
+</details>
+
 ## 8. also create 2 more folders - **components** and **hooks** inside src folder
 
 ## 9. inside hooks folder create file **useCounter.tsx**
 
-    Add below code to it 
-        <details>
-            <summary>useCounter</summary>
-            <p>
+Add below code to it 
+    
+   <details>
+      <summary>useCounter</summary>
+        <p>
 
-        ```javascript
+```javascript
 
                 import {useState} from 'react'
 
@@ -85,15 +94,16 @@ the complete file will look like below :
                 }
 
                 export  {useCounter}
-        ```
-            </p>
+```
+
+</p>
             
-        </details>
+   </details>
 
 
 ## 10. inside components folder create a new file Button.tsx 
 
-        ```javascript
+```javascript
             import React,{ReactNode} from 'react'
 
             type ButtonPropsType= {
@@ -119,7 +129,7 @@ the complete file will look like below :
 
             export {Button}
 
-        ```
+```
 
 ## 11. in index.ts export components are hoooks
 
@@ -159,6 +169,7 @@ export default defineConfig({
         "allowSyntheticDefaultImports": true
     }
 }
+
 ```
 
 ## 14. check for working of the  build command
